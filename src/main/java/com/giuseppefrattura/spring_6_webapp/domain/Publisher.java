@@ -8,15 +8,15 @@ import java.util.Set;
 
 @Entity
 @Data
-public class Author {
+public class Publisher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String publisherName;
+    private String address;
 
-    @ManyToMany(mappedBy = "authors")
+    @OneToMany(mappedBy = "publisher")
     private Set<Book> books = new HashSet<>();
 
 }

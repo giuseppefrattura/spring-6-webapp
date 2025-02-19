@@ -1,14 +1,13 @@
 package com.giuseppefrattura.spring_6_webapp.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Data
-@AllArgsConstructor
 public class Book {
 
     @Id
@@ -19,5 +18,8 @@ public class Book {
 
     @ManyToMany
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name="book_id"), inverseJoinColumns = @JoinColumn(name = "author_id"))
-    private Set<Author> authors;
+    private Set<Author> authors = new HashSet<>();
+
+    @ManyToOne
+    private Publisher publisher;
 }
