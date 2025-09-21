@@ -1,6 +1,6 @@
-package com.giuseppefrattura.spring_6_webapp.repositories;
+package com.giuseppefrattura.spring6webapp.repositories;
 
-import com.giuseppefrattura.spring_6_webapp.domain.Publisher;
+import com.giuseppefrattura.spring6webapp.domain.Publisher;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PublisherRepository extends CrudRepository<Publisher, Long> {

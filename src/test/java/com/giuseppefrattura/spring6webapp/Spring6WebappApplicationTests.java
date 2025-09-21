@@ -1,4 +1,4 @@
-package com.giuseppefrattura.spring_6_webapp;
+package com.giuseppefrattura.spring6webapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

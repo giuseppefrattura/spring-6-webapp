@@ -1,4 +1,4 @@
-package com.giuseppefrattura.spring_6_webapp;
+package com.giuseppefrattura.spring6webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

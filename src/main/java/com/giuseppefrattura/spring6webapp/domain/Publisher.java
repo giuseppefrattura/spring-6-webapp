@@ -1,4 +1,4 @@
-package com.giuseppefrattura.spring_6_webapp.domain;
+package com.giuseppefrattura.spring6webapp.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
